@@ -25,5 +25,11 @@ namespace JobService.Controllers
 		{
 			return await _mediator.Send(new AddJobCommand());
 		}
+
+		[HttpGet]
+		public ActionResult<string> Get()
+		{
+			return "test";
+		}
 	}
 }
