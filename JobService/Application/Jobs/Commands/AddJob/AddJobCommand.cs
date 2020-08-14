@@ -27,7 +27,7 @@ namespace Application.Jobs.Commands.AddJob
 					.SetQueryParam("max", "100")
 					.GetAsync(cancellationToken);
 
-				
+
 				return await res.Content.ReadAsStringAsync();
 			}
 		}
