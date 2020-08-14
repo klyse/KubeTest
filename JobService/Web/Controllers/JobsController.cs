@@ -21,15 +21,9 @@ namespace JobService.Controllers
 		}
 
 		[HttpPost]
-		public async Task<ActionResult<Unit>> Post()
+		public async Task<ActionResult<string>> Post()
 		{
 			return await _mediator.Send(new AddJobCommand());
-		}
-
-		[HttpGet]
-		public ActionResult<string> Get()
-		{
-			return "test";
 		}
 	}
 }
